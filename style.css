@@ -1,0 +1,199 @@
+/* Reset & Global */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image:url("images/background.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+
+/* SECTION */
+
+.oil-section{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+/* .oil-container{
+  width:100%;
+  max-width:420px;
+} */
+
+
+/* Hot Seller badge */
+
+.hot-badge{
+  margin-bottom:25px;
+}
+
+.hot-badge img{
+  width:140px;
+  height:auto;
+  display:block;
+}
+
+
+/* Title */
+
+.oil-title{
+  margin-bottom:25px;
+}
+
+.oil-title img{
+  width:100%;
+  max-width:280px;
+  height:auto;
+  display:block;
+}
+
+
+/* Description */
+
+.oil-desc{
+  margin-bottom:10px;
+}
+
+.oil-desc img{
+  width:100%;
+  max-width:320px;
+  height:auto;
+  display:block;
+}
+
+
+/* Product Image */
+
+.oil-image{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.oil-image img{
+  width:100%;
+  max-width:260px;
+  height:auto;
+  object-fit:contain;
+  margin-top:40px;
+}
+
+
+/* Bottom Section */
+
+.oil-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  gap:10px; 
+}
+
+
+/* Price Image */
+
+.price-tag img{
+  width:160px;
+  height:auto;
+  display:block;
+}
+
+
+/* Buy Button */
+
+.buy-button{
+  cursor:pointer;
+  display:inline-block;
+  transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.buy-button img{
+  width:170px;
+  height:auto;
+  display:block;
+  transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.buy-button:hover img{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.oil-container{
+  max-width:380px;
+}
+
+.oil-image img{
+  max-width:240px;
+}
+
+.price-tag img{
+  width:150px;
+}
+
+.buy-button img{
+  width:160px;
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.oil-section{
+  padding:30px 16px;
+}
+
+.oil-container{
+  max-width:100%;
+}
+
+/* Images scale properly */
+
+.hot-badge img{
+  width:120px;
+}
+
+.oil-title img{
+  max-width:220px;
+}
+
+.oil-desc img{
+  max-width:260px;
+}
+
+.oil-image img{
+  max-width:210px;
+}
+
+.price-tag img{
+  width:130px;
+}
+
+.buy-button img{
+  width:140px;
+}
+
+/* keep price and button on same row */
+
+.oil-bottom{
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+}
